@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  padding-top: 1.5em;
+  padding-top: 1em;
   padding-bottom: 1.5em;
   grid-area: header;
   display: grid;
@@ -26,13 +26,7 @@ header {
 }
 
 .personal {
-  margin-bottom: 1em;
   text-align: center;
-}
-
-.main-img {
-  padding: .5em;
-  margin: auto;
 }
 
 .socials {
@@ -42,45 +36,79 @@ header {
 
 .icon {
   padding: .6em;
-  width: 2.5em;
+  width: 1.5em;
   color: #555555;
 }
 
 .icon:hover {
   border-bottom: 2px solid #555555;
-  padding: .4em;
-  width: 2.7em;
+  padding: .3em;
+  width: 2em;
 }
 
 .name {
   font-size: 3em;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 section {
+  margin: auto;
+  text-align: center;
   grid-area: section;
   margin-top: 1em;
 }
 
+.project {
+  margin: .5em;
+  padding-bottom: 1.3em;
+}
+
+.project img {
+  max-width: 90%;
+  padding-top: .5em;
+}
+
+section a {
+  text-decoration: none;
+  color: #bfbfbe;
+  font-weight: 200;
+}
+
+.project-title {
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
 footer {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1.5em;
   grid-area: footer;
   display: grid;
   justify-content: center;
 }
 
 footer p {
-  margin-bottom: .5em;
-  font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1em;
+  font-weight: 200;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 805px) {
   
-  /* .wrapper {
-    margin: 1.5em;
-  } */
+  .wrapper {
+    margin: auto;
+    padding: 1.5em;
+  }
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .project {
+    max-width: 400px;
+    flex: 300px;
+  }
 
 }
-
