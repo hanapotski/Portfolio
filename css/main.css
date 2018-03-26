@@ -1,10 +1,11 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
+  background: 	#f9f9f9;
+  color: #2e2e2b;
 }
 
 .wrapper {
-  background: gray;
   max-width: 80%;
   margin: auto;
   padding: 1.5em;
@@ -26,8 +27,7 @@ header {
 
 .personal {
   margin-bottom: 1em;
-  display: grid;
-  justify-content: center;
+  text-align: center;
 }
 
 .main-img {
@@ -41,12 +41,18 @@ header {
 }
 
 .icon {
-  padding: .3em;
+  padding: .6em;
   width: 2.5em;
+  color: #555555;
+}
+
+.icon:hover {
+  border-bottom: 2px solid #555555;
+  padding: .4em;
+  width: 2.7em;
 }
 
 .name {
-  letter-spacing: -0.03em;
   font-size: 3em;
   font-weight: bold;
 }
@@ -57,12 +63,18 @@ section {
 }
 
 footer {
+  text-align: center;
   margin-top: 2em;
   grid-area: footer;
   display: grid;
   justify-content: center;
 }
 
+footer p {
+  margin-bottom: .5em;
+  font-weight: bold;
+  font-size: 1.3em;
+}
 
 @media (min-width: 600px) {
   
