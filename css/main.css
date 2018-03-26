@@ -5,6 +5,30 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.wrapper {
+  display: grid;
+  /* grid-gap: 5px; */
+  grid-template-areas: 
+    "header"
+    "section"
+    "footer"
+}
+
+.icon {
+  width: 1.25em;
+}
+
+header {
+  grid-area: header;
+}
+
+section {
+  grid-area: section;
+}
+
+footer {
+  grid-area: footer;
+}
 
 
 @media only screen and (min-width: 600px) {
