@@ -1,7 +1,7 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
-  background: 	#f9f9f9;
+  background: #f9f9f9;
   color: #2e2e2b;
 }
 
@@ -11,10 +11,10 @@ body {
   padding: 1.5em;
   display: grid;
   justify-content: center;
-  grid-template-areas: 
-    "header"
-    "section"
-    "footer"
+  grid-template-areas:
+    'header'
+    'section'
+    'footer';
 }
 
 header {
@@ -35,14 +35,14 @@ header {
 }
 
 .icon {
-  padding: .6em;
+  padding: 0.6em;
   width: 1.5em;
   color: #555555;
 }
 
 .icon:hover {
   border-bottom: 2px solid #555555;
-  padding: .3em;
+  padding: 0.3em;
   width: 2em;
 }
 
@@ -59,18 +59,18 @@ section {
 }
 
 .project {
-  margin: .5em;
+  margin: 0.5em;
   padding-bottom: 1.3em;
 }
 
 .project img {
   max-width: 90%;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 
 section a {
   text-decoration: none;
-  color: #bfbfbe;
+  color: #a0a09f;
   font-weight: 200;
 }
 
@@ -93,22 +93,20 @@ footer p {
 }
 
 @media (min-width: 805px) {
-  
   .wrapper {
     margin: auto;
     padding: 1.5em;
   }
-  
+
   section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .project {
     max-width: 400px;
     flex: 300px;
   }
-
 }
